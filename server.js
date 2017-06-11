@@ -1,13 +1,13 @@
 //modules
 const express = require('express')
-const app = express
+const app = express()
 const bodyParser = require('body-parser')
 const methodOverride = require('method-override')
 
 //configuration
 
 //config files
-const db = reqire('./config/db')
+const db = require('./config/db')
 
 //set port
 const port = process.env.PORT || 8080
@@ -38,7 +38,7 @@ require('./app/routes')(app) //configure routes
 app.listen(port)
 
 //confirm message
-console.log('listening on port' = port)
+console.log('listening on port' + port)
 
 //expose app (not sure what this does)
-exports = module.exports = app 
+exports = module.exports = app

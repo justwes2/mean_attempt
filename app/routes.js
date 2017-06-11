@@ -21,7 +21,7 @@ const Nerd = require('./models/nerd')
     //frontend routes
     //route to handle angular requests
     app.get('*', function(req, res) {
-      res.sendfile('.public/views/index.html') //loads index file
+      res.sendfile('./public/views/index.html') //loads index file
     })
-    
+
   }
